@@ -1,0 +1,6 @@
+D:\Lập trình giao diện\GUI_QLNhaSach\DTO_QLNhaSach\bin\Debug\DTO_QLNhaSach.dll
+D:\Lập trình giao diện\GUI_QLNhaSach\DTO_QLNhaSach\bin\Debug\DTO_QLNhaSach.pdb
+D:\Lập trình giao diện\GUI_QLNhaSach\DTO_QLNhaSach\obj\Debug\DTO_QLNhaSach.csproj.AssemblyReference.cache
+D:\Lập trình giao diện\GUI_QLNhaSach\DTO_QLNhaSach\obj\Debug\DTO_QLNhaSach.csproj.CoreCompileInputs.cache
+D:\Lập trình giao diện\GUI_QLNhaSach\DTO_QLNhaSach\obj\Debug\DTO_QLNhaSach.dll
+D:\Lập trình giao diện\GUI_QLNhaSach\DTO_QLNhaSach\obj\Debug\DTO_QLNhaSach.pdb
