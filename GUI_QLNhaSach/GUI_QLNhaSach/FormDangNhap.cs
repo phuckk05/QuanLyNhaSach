@@ -24,12 +24,25 @@ namespace GUI_QLNhaSach
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
-            if (txtTenDangNhap.Text != "admin" || txtMatKhau.Text != "123456")
-                Application.Exit();
+            if (txtTenDangNhap.Text == "" || txtMatKhau.Text == "")
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu bị rỗng!!!");
+            if (txtTenDangNhap.Text == "admin")
+            {
+                if (txtMatKhau.Text == "admin")
+                {
+                    FormQL f = new FormQL();
+                    f.Show();
+                }
+                else if (txtMatKhau.Text == "123456")
+                {
+                    FormTrangChu k = new FormTrangChu();
+                    k.Show();
+                }                
+            }           
             else
             {
-                this.Close();
-            }
+                MessageBox.Show("Nhập tên đăng nhập sai!!");
+            } 
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -41,6 +54,19 @@ namespace GUI_QLNhaSach
         {
             if (txtTenDangNhap.Text == "")
                 Application.Exit();
+        }
+
+        private void btThoat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void FormDangNhap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btDangNhap.PerformClick();
+            }    
         }
     }
 }

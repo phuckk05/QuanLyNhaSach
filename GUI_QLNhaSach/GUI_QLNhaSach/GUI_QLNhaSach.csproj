@@ -52,17 +52,11 @@
     <Compile Include="FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhaCungCap.cs">
+    <Compile Include="FormQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNhaCungCap.Designer.cs">
-      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQLSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQLSach.Designer.cs">
-      <DependentUpon>FormQLSach.cs</DependentUpon>
+    <Compile Include="FormQL.Designer.cs">
+      <DependentUpon>FormQL.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTrangChu.cs">
       <SubType>Form</SubType>
@@ -72,27 +66,70 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QLHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLHoaDon.Designer.cs">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLKhachHang.Designer.cs">
+      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLNCungCap.Designer.cs">
+      <DependentUpon>QLNCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLNhanVien.Designer.cs">
+      <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLSach.Designer.cs">
+      <DependentUpon>QLSach.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNhaCungCap.resx">
-      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQLSach.resx">
-      <DependentUpon>FormQLSach.cs</DependentUpon>
+    <EmbeddedResource Include="FormQL.resx">
+      <DependentUpon>FormQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTrangChu.resx">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="QLHoaDon.resx">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKhachHang.resx">
+      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNCungCap.resx">
+      <DependentUpon>QLNCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNhanVien.resx">
+      <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLSach.resx">
+      <DependentUpon>QLSach.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +152,15 @@
       <Project>{50cbd283-7feb-4ae0-a938-8fd59d8ffd0f}</Project>
       <Name>DTO_QLNhaSach</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_thongke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sodo1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

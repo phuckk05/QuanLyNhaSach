@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS_QLNhaSach;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,18 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BUS_QLNhaSach;
 
 namespace GUI_QLNhaSach
 {
-    public partial class FormQLSach : Form
+    public partial class QLSach : UserControl
     {
         BUS_QuanLi busql = new BUS_QuanLi();
-        public FormQLSach()
+
+        public QLSach()
         {
             InitializeComponent();
             loadTheLoai();
             loadNXB();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void loadTheLoai()
@@ -31,11 +37,6 @@ namespace GUI_QLNhaSach
         {
             cbNXB.DataSource = busql.getNXB();
             cbNXB.DisplayMember = "TenNXB";
-        }
-
-        private void btThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI_QLNhaSach
 {
-    public partial class FormTrangChu : Form
+    public partial class QLNhanVien : UserControl
     {
-        public FormTrangChu()
+        public QLNhanVien()
         {
             InitializeComponent();
         }
-
-   
     }
 }

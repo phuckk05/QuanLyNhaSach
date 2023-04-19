@@ -16,7 +16,7 @@ namespace GUI_QLNhaSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTrangChu());
+            Application.Run(new FormDangNhap());
         }
     }
 }

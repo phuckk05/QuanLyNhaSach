@@ -14,7 +14,11 @@ D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\bin\Debug\BUS_QLNhaSach.
 D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\bin\Debug\DTO_QLNhaSach.pdb
 D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\bin\Debug\DAL_QLNhaSach.pdb
 D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.csproj.CopyComplete
-D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.FormQLSach.resources
 D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.FormTrangChu.resources
 D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.FormDangNhap.resources
-D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.FormNhaCungCap.resources
+D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.FormQL.resources
+D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.QLNCungCap.resources
+D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.QLSach.resources
+D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.QLNhanVien.resources
+D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.QLHoaDon.resources
+D:\Lập trình giao diện\GUI_QLNhaSach\GUI_QLNhaSach\obj\Debug\GUI_QLNhaSach.QLKhachHang.resources

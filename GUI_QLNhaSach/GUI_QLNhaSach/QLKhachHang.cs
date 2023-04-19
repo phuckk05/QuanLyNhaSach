@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_QLNhaSach
 {
-    public partial class FormNhaCungCap : Form
+    public partial class QLKhachHang : UserControl
     {
-        public FormNhaCungCap()
+        public QLKhachHang()
         {
             InitializeComponent();
         }
