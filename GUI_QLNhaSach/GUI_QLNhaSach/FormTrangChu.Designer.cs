@@ -33,19 +33,20 @@ namespace GUI_QLNhaSach
             this.label2 = new System.Windows.Forms.Label();
             this.btThongKe = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btHoaDon = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btTK = new System.Windows.Forms.Button();
-            this.btSoDo = new System.Windows.Forms.Button();
-            this.btThanhToan = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btDangXuat = new System.Windows.Forms.Button();
+            this.btTK = new System.Windows.Forms.Button();
+            this.btDangKi = new System.Windows.Forms.Button();
+            this.btThanhToan = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -55,7 +56,7 @@ namespace GUI_QLNhaSach
             this.label2.Location = new System.Drawing.Point(15, 200);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1023, 70);
+            this.label2.Size = new System.Drawing.Size(1022, 70);
             this.label2.TabIndex = 20;
             this.label2.Text = "NHÀ SÁCH ALPHABOOK";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,6 +87,17 @@ namespace GUI_QLNhaSach
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(42, 33);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(428, 203);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // btHoaDon
             // 
             this.btHoaDon.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -112,29 +124,52 @@ namespace GUI_QLNhaSach
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(42, 33);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(428, 202);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btDangXuat
+            // 
+            this.btDangXuat.Image = global::GUI_QLNhaSach.Properties.Resources.log_out;
+            this.btDangXuat.Location = new System.Drawing.Point(811, 302);
+            this.btDangXuat.Name = "btDangXuat";
+            this.btDangXuat.Size = new System.Drawing.Size(188, 210);
+            this.btDangXuat.TabIndex = 21;
+            this.btDangXuat.UseVisualStyleBackColor = true;
+            this.btDangXuat.Click += new System.EventHandler(this.btDangXuat_Click);
+            // 
             // btTK
             // 
             this.btTK.BackColor = System.Drawing.Color.White;
             this.btTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTK.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btTK.Image = global::GUI_QLNhaSach.Properties.Resources.icon_thongke;
-            this.btTK.Location = new System.Drawing.Point(397, 302);
+            this.btTK.Location = new System.Drawing.Point(298, 303);
             this.btTK.Name = "btTK";
-            this.btTK.Size = new System.Drawing.Size(247, 210);
+            this.btTK.Size = new System.Drawing.Size(218, 210);
             this.btTK.TabIndex = 7;
             this.btTK.UseVisualStyleBackColor = false;
+            this.btTK.Click += new System.EventHandler(this.btTK_Click);
             // 
-            // btSoDo
+            // btDangKi
             // 
-            this.btSoDo.BackColor = System.Drawing.Color.White;
-            this.btSoDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSoDo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btSoDo.Image = global::GUI_QLNhaSach.Properties.Resources.sodo1;
-            this.btSoDo.Location = new System.Drawing.Point(697, 302);
-            this.btSoDo.Name = "btSoDo";
-            this.btSoDo.Size = new System.Drawing.Size(247, 210);
-            this.btSoDo.TabIndex = 7;
-            this.btSoDo.UseVisualStyleBackColor = false;
+            this.btDangKi.BackColor = System.Drawing.Color.White;
+            this.btDangKi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDangKi.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btDangKi.Image = global::GUI_QLNhaSach.Properties.Resources.Xem_hoa_don;
+            this.btDangKi.Location = new System.Drawing.Point(557, 302);
+            this.btDangKi.Name = "btDangKi";
+            this.btDangKi.Size = new System.Drawing.Size(213, 210);
+            this.btDangKi.TabIndex = 7;
+            this.btDangKi.UseVisualStyleBackColor = false;
+            this.btDangKi.Click += new System.EventHandler(this.btDangKi_Click);
             // 
             // btThanhToan
             // 
@@ -142,22 +177,12 @@ namespace GUI_QLNhaSach
             this.btThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThanhToan.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btThanhToan.Image = ((System.Drawing.Image)(resources.GetObject("btThanhToan.Image")));
-            this.btThanhToan.Location = new System.Drawing.Point(109, 302);
+            this.btThanhToan.Location = new System.Drawing.Point(53, 302);
             this.btThanhToan.Name = "btThanhToan";
-            this.btThanhToan.Size = new System.Drawing.Size(235, 210);
+            this.btThanhToan.Size = new System.Drawing.Size(204, 210);
             this.btThanhToan.TabIndex = 7;
             this.btThanhToan.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(42, 33);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(428, 203);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.btThanhToan.Click += new System.EventHandler(this.btThanhToan_Click);
             // 
             // pictureBox1
             // 
@@ -171,25 +196,15 @@ namespace GUI_QLNhaSach
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(42, 33);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(428, 202);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // FormTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1052, 557);
+            this.Controls.Add(this.btDangXuat);
             this.Controls.Add(this.btTK);
-            this.Controls.Add(this.btSoDo);
+            this.Controls.Add(this.btDangKi);
             this.Controls.Add(this.btThanhToan);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
@@ -203,10 +218,10 @@ namespace GUI_QLNhaSach
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,8 +236,9 @@ namespace GUI_QLNhaSach
         private System.Windows.Forms.Button btHoaDon;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btSoDo;
+        private System.Windows.Forms.Button btDangKi;
         private System.Windows.Forms.Button btThanhToan;
         private System.Windows.Forms.Button btTK;
+        private System.Windows.Forms.Button btDangXuat;
     }
 }

@@ -46,5 +46,13 @@ namespace GUI_QLNhaSach
         {
             qlHoaDon1.BringToFront();
         }
+
+        private void btDangXuat_Click(object sender, EventArgs e)
+        {
+            FormDangNhap f = new FormDangNhap();
+            f.Show();
+
+            this.Hide();
+        }
     }
 }

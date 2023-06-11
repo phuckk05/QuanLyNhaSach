@@ -17,6 +17,30 @@ namespace GUI_QLNhaSach
             InitializeComponent();
         }
 
-   
+        private void btDangXuat_Click(object sender, EventArgs e)
+        {
+            FormDangNhap f = new FormDangNhap();
+            f.Show();
+
+            this.Hide();
+        }
+
+        private void btThanhToan_Click(object sender, EventArgs e)
+        {
+            FormThanhToan f = new FormThanhToan();
+            f.Show();
+        }
+
+        private void btDangKi_Click(object sender, EventArgs e)
+        {
+            FormDangKy f = new FormDangKy();
+            f.Show();
+        }
+
+        private void btTK_Click(object sender, EventArgs e)
+        {
+            FormThongKe f = new FormThongKe();
+            f.Show();
+        }
     }
 }

@@ -1,4 +1,3 @@
-D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\obj\Debug\BUS_QLNhaSach.csproj.CoreCompileInputs.cache
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\bin\Debug\BUS_QLNhaSach.dll
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\bin\Debug\BUS_QLNhaSach.pdb
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\bin\Debug\DAL_QLNhaSach.dll
@@ -6,6 +5,7 @@ D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\bin\Debug\DTO_QLNhaSach.
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\bin\Debug\DAL_QLNhaSach.pdb
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\bin\Debug\DTO_QLNhaSach.pdb
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\obj\Debug\BUS_QLNhaSach.csproj.AssemblyReference.cache
+D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\obj\Debug\BUS_QLNhaSach.csproj.CoreCompileInputs.cache
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\obj\Debug\BUS_QLNhaSach.csproj.CopyComplete
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\obj\Debug\BUS_QLNhaSach.dll
 D:\Lập trình giao diện\GUI_QLNhaSach\BUS_QLNhaSach\obj\Debug\BUS_QLNhaSach.pdb

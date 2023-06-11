@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +58,24 @@
     </Compile>
     <Compile Include="FormQL.Designer.cs">
       <DependentUpon>FormQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangKy.Designer.cs">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThanhToan.Designer.cs">
+      <DependentUpon>FormThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKe.Designer.cs">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTrangChu.cs">
       <SubType>Form</SubType>
@@ -83,11 +102,11 @@
     <Compile Include="QLKhachHang.Designer.cs">
       <DependentUpon>QLKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLNCungCap.cs">
+    <Compile Include="QLNXuatBan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="QLNCungCap.Designer.cs">
-      <DependentUpon>QLNCungCap.cs</DependentUpon>
+    <Compile Include="QLNXuatBan.Designer.cs">
+      <DependentUpon>QLNXuatBan.cs</DependentUpon>
     </Compile>
     <Compile Include="QLNhanVien.cs">
       <SubType>UserControl</SubType>
@@ -107,6 +126,15 @@
     <EmbeddedResource Include="FormQL.resx">
       <DependentUpon>FormQL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDangKy.resx">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThanhToan.resx">
+      <DependentUpon>FormThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKe.resx">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTrangChu.resx">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,8 +149,8 @@
     <EmbeddedResource Include="QLKhachHang.resx">
       <DependentUpon>QLKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QLNCungCap.resx">
-      <DependentUpon>QLNCungCap.cs</DependentUpon>
+    <EmbeddedResource Include="QLNXuatBan.resx">
+      <DependentUpon>QLNXuatBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLNhanVien.resx">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
@@ -161,6 +189,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sodo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log_out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xem_hoa_don.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

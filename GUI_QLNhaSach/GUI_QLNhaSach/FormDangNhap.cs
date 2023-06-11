@@ -25,24 +25,41 @@ namespace GUI_QLNhaSach
         private void btDangNhap_Click(object sender, EventArgs e)
         {
             if (txtTenDangNhap.Text == "" || txtMatKhau.Text == "")
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu bị rỗng!!!");
-            if (txtTenDangNhap.Text == "admin")
             {
-                if (txtMatKhau.Text == "admin")
-                {
-                    FormQL f = new FormQL();
-                    f.Show();
-                }
-                else if (txtMatKhau.Text == "123456")
-                {
-                    FormTrangChu k = new FormTrangChu();
-                    k.Show();
-                }                
-            }           
+                 MessageBox.Show("Tên đăng nhập hoặc mật khẩu bị rỗng!!!", "Thông báo");
+            }    
             else
             {
-                MessageBox.Show("Nhập tên đăng nhập sai!!");
-            } 
+                if (txtTenDangNhap.Text == "admin")
+                {
+                    if (txtMatKhau.Text == "admin")
+                    {
+                        FormQL f = new FormQL();
+                        this.Hide();
+                        f.ShowDialog();
+                    }
+                    else
+                    {
+                        if (txtMatKhau.Text == "123456")
+                        {
+                            FormTrangChu k = new FormTrangChu();
+                            this.Hide();
+                            k.ShowDialog();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Nhập mật khẩu sai sai!!", "Thông báo");
+                            txtMatKhau.Text = "";
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nhập tên đăng nhập sai!!", "Thông báo");
+                    txtTenDangNhap.Text = "";
+                }
+            }    
+            
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -50,17 +67,7 @@ namespace GUI_QLNhaSach
             Application.Exit();
         }
 
-        private void FormDangNhap_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (txtTenDangNhap.Text == "")
-                Application.Exit();
-        }
-
-        private void btThoat_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
+        // phim tat enter de dang nhap
         private void FormDangNhap_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)

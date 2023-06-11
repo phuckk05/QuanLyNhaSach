@@ -30,15 +30,16 @@ namespace GUI_QLNhaSach
         private void InitializeComponent()
         {
             this.QuanLi = new System.Windows.Forms.SplitContainer();
+            this.btDangXuat = new System.Windows.Forms.Button();
             this.btQLNCC = new System.Windows.Forms.Button();
             this.btQLHD = new System.Windows.Forms.Button();
             this.btQLS = new System.Windows.Forms.Button();
             this.btQLKH = new System.Windows.Forms.Button();
             this.btQLNV = new System.Windows.Forms.Button();
+            this.qlnCungCap1 = new GUI_QLNhaSach.QLNXuatBan();
             this.qlHoaDon1 = new GUI_QLNhaSach.QLHoaDon();
-            this.qlnCungCap1 = new GUI_QLNhaSach.QLNCungCap();
-            this.qlKhachHang1 = new GUI_QLNhaSach.QLKhachHang();
             this.qlSach1 = new GUI_QLNhaSach.QLSach();
+            this.qlKhachHang1 = new GUI_QLNhaSach.QLKhachHang();
             this.qlNhanVien1 = new GUI_QLNhaSach.QLNhanVien();
             ((System.ComponentModel.ISupportInitialize)(this.QuanLi)).BeginInit();
             this.QuanLi.Panel1.SuspendLayout();
@@ -56,6 +57,7 @@ namespace GUI_QLNhaSach
             // QuanLi.Panel1
             // 
             this.QuanLi.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.QuanLi.Panel1.Controls.Add(this.btDangXuat);
             this.QuanLi.Panel1.Controls.Add(this.btQLNCC);
             this.QuanLi.Panel1.Controls.Add(this.btQLHD);
             this.QuanLi.Panel1.Controls.Add(this.btQLS);
@@ -65,16 +67,31 @@ namespace GUI_QLNhaSach
             // QuanLi.Panel2
             // 
             this.QuanLi.Panel2.BackColor = System.Drawing.Color.LightGray;
-            this.QuanLi.Panel2.Controls.Add(this.qlHoaDon1);
             this.QuanLi.Panel2.Controls.Add(this.qlnCungCap1);
-            this.QuanLi.Panel2.Controls.Add(this.qlKhachHang1);
+            this.QuanLi.Panel2.Controls.Add(this.qlHoaDon1);
             this.QuanLi.Panel2.Controls.Add(this.qlSach1);
+            this.QuanLi.Panel2.Controls.Add(this.qlKhachHang1);
             this.QuanLi.Panel2.Controls.Add(this.qlNhanVien1);
             this.QuanLi.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.QuanLi.Size = new System.Drawing.Size(1297, 502);
-            this.QuanLi.SplitterDistance = 230;
+            this.QuanLi.Size = new System.Drawing.Size(1290, 572);
+            this.QuanLi.SplitterDistance = 217;
             this.QuanLi.SplitterWidth = 3;
             this.QuanLi.TabIndex = 0;
+            // 
+            // btDangXuat
+            // 
+            this.btDangXuat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDangXuat.ForeColor = System.Drawing.Color.White;
+            this.btDangXuat.Location = new System.Drawing.Point(0, 270);
+            this.btDangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btDangXuat.Name = "btDangXuat";
+            this.btDangXuat.Size = new System.Drawing.Size(217, 54);
+            this.btDangXuat.TabIndex = 5;
+            this.btDangXuat.Text = "Đăng xuất";
+            this.btDangXuat.UseVisualStyleBackColor = true;
+            this.btDangXuat.Click += new System.EventHandler(this.btDangXuat_Click);
             // 
             // btQLNCC
             // 
@@ -85,9 +102,9 @@ namespace GUI_QLNhaSach
             this.btQLNCC.Location = new System.Drawing.Point(0, 216);
             this.btQLNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btQLNCC.Name = "btQLNCC";
-            this.btQLNCC.Size = new System.Drawing.Size(230, 54);
+            this.btQLNCC.Size = new System.Drawing.Size(217, 54);
             this.btQLNCC.TabIndex = 4;
-            this.btQLNCC.Text = "Quản lý nhà cung cấp";
+            this.btQLNCC.Text = "Quản lý nhà xuất bản";
             this.btQLNCC.UseVisualStyleBackColor = true;
             this.btQLNCC.Click += new System.EventHandler(this.btQLNCC_Click);
             // 
@@ -100,7 +117,7 @@ namespace GUI_QLNhaSach
             this.btQLHD.Location = new System.Drawing.Point(0, 162);
             this.btQLHD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btQLHD.Name = "btQLHD";
-            this.btQLHD.Size = new System.Drawing.Size(230, 54);
+            this.btQLHD.Size = new System.Drawing.Size(217, 54);
             this.btQLHD.TabIndex = 3;
             this.btQLHD.Text = "Quản lý hóa đơn";
             this.btQLHD.UseVisualStyleBackColor = true;
@@ -115,7 +132,7 @@ namespace GUI_QLNhaSach
             this.btQLS.Location = new System.Drawing.Point(0, 108);
             this.btQLS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btQLS.Name = "btQLS";
-            this.btQLS.Size = new System.Drawing.Size(230, 54);
+            this.btQLS.Size = new System.Drawing.Size(217, 54);
             this.btQLS.TabIndex = 2;
             this.btQLS.Text = "Quản lý sách";
             this.btQLS.UseVisualStyleBackColor = true;
@@ -130,7 +147,7 @@ namespace GUI_QLNhaSach
             this.btQLKH.Location = new System.Drawing.Point(0, 54);
             this.btQLKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btQLKH.Name = "btQLKH";
-            this.btQLKH.Size = new System.Drawing.Size(230, 54);
+            this.btQLKH.Size = new System.Drawing.Size(217, 54);
             this.btQLKH.TabIndex = 1;
             this.btQLKH.Text = "Quản lý khách hàng";
             this.btQLKH.UseVisualStyleBackColor = true;
@@ -145,51 +162,55 @@ namespace GUI_QLNhaSach
             this.btQLNV.Location = new System.Drawing.Point(0, 0);
             this.btQLNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btQLNV.Name = "btQLNV";
-            this.btQLNV.Size = new System.Drawing.Size(230, 54);
+            this.btQLNV.Size = new System.Drawing.Size(217, 54);
             this.btQLNV.TabIndex = 0;
             this.btQLNV.Text = "Quản lý nhân viên";
             this.btQLNV.UseVisualStyleBackColor = true;
             this.btQLNV.Click += new System.EventHandler(this.btQLNhanVien_Click);
             // 
-            // qlHoaDon1
-            // 
-            this.qlHoaDon1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.qlHoaDon1.Location = new System.Drawing.Point(3, 3);
-            this.qlHoaDon1.Name = "qlHoaDon1";
-            this.qlHoaDon1.Size = new System.Drawing.Size(1065, 504);
-            this.qlHoaDon1.TabIndex = 4;
-            // 
             // qlnCungCap1
             // 
             this.qlnCungCap1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.qlnCungCap1.Location = new System.Drawing.Point(3, 3);
+            this.qlnCungCap1.Location = new System.Drawing.Point(2, 3);
+            this.qlnCungCap1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.qlnCungCap1.Name = "qlnCungCap1";
-            this.qlnCungCap1.Size = new System.Drawing.Size(1065, 504);
-            this.qlnCungCap1.TabIndex = 3;
+            this.qlnCungCap1.Size = new System.Drawing.Size(1065, 569);
+            this.qlnCungCap1.TabIndex = 4;
             // 
-            // qlKhachHang1
+            // qlHoaDon1
             // 
-            this.qlKhachHang1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.qlKhachHang1.Location = new System.Drawing.Point(3, 3);
-            this.qlKhachHang1.Name = "qlKhachHang1";
-            this.qlKhachHang1.Size = new System.Drawing.Size(1065, 504);
-            this.qlKhachHang1.TabIndex = 2;
+            this.qlHoaDon1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.qlHoaDon1.Location = new System.Drawing.Point(2, 3);
+            this.qlHoaDon1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.qlHoaDon1.Name = "qlHoaDon1";
+            this.qlHoaDon1.Size = new System.Drawing.Size(1065, 569);
+            this.qlHoaDon1.TabIndex = 3;
             // 
             // qlSach1
             // 
             this.qlSach1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.qlSach1.Location = new System.Drawing.Point(3, 3);
+            this.qlSach1.Location = new System.Drawing.Point(2, 3);
             this.qlSach1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.qlSach1.Name = "qlSach1";
-            this.qlSach1.Size = new System.Drawing.Size(1065, 504);
-            this.qlSach1.TabIndex = 1;
+            this.qlSach1.Size = new System.Drawing.Size(1065, 650);
+            this.qlSach1.TabIndex = 2;
+            // 
+            // qlKhachHang1
+            // 
+            this.qlKhachHang1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.qlKhachHang1.Location = new System.Drawing.Point(2, 3);
+            this.qlKhachHang1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.qlKhachHang1.Name = "qlKhachHang1";
+            this.qlKhachHang1.Size = new System.Drawing.Size(1065, 569);
+            this.qlKhachHang1.TabIndex = 1;
             // 
             // qlNhanVien1
             // 
             this.qlNhanVien1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.qlNhanVien1.Location = new System.Drawing.Point(3, 3);
+            this.qlNhanVien1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.qlNhanVien1.Name = "qlNhanVien1";
-            this.qlNhanVien1.Size = new System.Drawing.Size(1065, 504);
+            this.qlNhanVien1.Size = new System.Drawing.Size(1065, 566);
             this.qlNhanVien1.TabIndex = 0;
             // 
             // FormQL
@@ -197,7 +218,7 @@ namespace GUI_QLNhaSach
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1297, 502);
+            this.ClientSize = new System.Drawing.Size(1290, 572);
             this.Controls.Add(this.QuanLi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -221,10 +242,11 @@ namespace GUI_QLNhaSach
         private System.Windows.Forms.Button btQLHD;
         private System.Windows.Forms.Button btQLS;
         private System.Windows.Forms.Button btQLKH;
+        private System.Windows.Forms.Button btDangXuat;
         private QLNhanVien qlNhanVien1;
         private QLSach qlSach1;
-        private QLHoaDon qlHoaDon1;
-        private QLNCungCap qlnCungCap1;
         private QLKhachHang qlKhachHang1;
+        private QLNXuatBan qlnCungCap1;
+        private QLHoaDon qlHoaDon1;
     }
 }

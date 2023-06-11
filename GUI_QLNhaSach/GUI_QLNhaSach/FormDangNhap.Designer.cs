@@ -165,7 +165,6 @@ namespace GUI_QLNhaSach
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = false;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            this.btThoat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btThoat_KeyPress);
             // 
             // btDangNhap
             // 
@@ -199,7 +198,6 @@ namespace GUI_QLNhaSach
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDangNhap_FormClosing);
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDangNhap_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
